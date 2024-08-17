@@ -29,4 +29,7 @@ app.listen(PORT, () => {
 });
 
 const userRoutes = require('./route/UserRoute');
+const foodsRoutes = require('./route/FoodsRoute');
+
 app.use('/api/users', userRoutes);
+app.use('/api/foods', foodsRoutes);
